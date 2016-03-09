@@ -1,0 +1,306 @@
+.reponse{
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #3F3D3D;
+  font-weight: bolder;
+  margin-top: 50px;
+  transition: all 0.5s;
+}
+.non div{
+  display: inline-block;
+}
+.reponse.non{
+  letter-spacing: 10px;
+}
+.sad .lettre1{
+  position: absolute;
+  transform: rotate(-20deg);
+  left: calc(50% - 50px);
+  top: 7px;
+}
+.sad .lettre2{
+  position: absolute;
+  transform: rotate(20deg);
+  top : 9px;
+}
+.zoomRotate{
+  transform: rotateY(360deg) scale(2);
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.content{
+  position: absolute;
+  left: calc(50% - 500px);
+  width: 1000px;
+  bottom: 0;
+  top: 94px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size : contain;
+}
+.divOui{
+  background-image: url("../images/sacSamedi.png");
+}
+.divNon{
+  background-image: url("../images/sacLundi.png");
+}
+.divBientot{
+  background-image: url("../images/sacMercredi.png");
+}
+.content img{
+  position: absolute;
+  width: auto;
+}
+.vodka,
+.ticket,
+.protection,
+.lingerie,
+.bouteille,
+.aspirine,
+.cernes,
+.allumettes,
+.agenda,
+.monnaie,
+.clef{
+  z-index: 1;
+}
+.vodkaOmbre,
+.ticketOmbre,
+.protectionOmbre,
+.lingerieOmbre,
+.bouteilleOmbre,
+.aspirineOmbre,
+.cernesOmbre,
+.allumettesOmbre,
+.agendaOmbre,
+.monnaieOmbre,
+.clefOmbre{
+  z-index: 2;
+}
+
+
+.mouchoirs{
+  z-index: 3;
+}
+.mouchoirsOmbre{
+  z-index: 4;
+}
+
+/* Oui */
+.vodka,
+.vodkaOmbre{
+  height: 60%;
+  bottom: 10px;
+  left: calc(50% - 10px);
+}
+.ticketOmbre,
+.ticket{
+  height: 10%;
+  bottom: 10px;
+  left: calc(50% - 120px);
+}
+.protectionOmbre,
+.protection{
+  height: 10%;
+  bottom: 120px;
+  left: calc(50% - 120px);
+}
+.lingerieOmbre,
+.lingerie{
+  height: 30%;
+  bottom: 230px;
+  left: calc(50% - 200px);
+}
+.texteVodka{
+  display: none;
+  width: 20%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  border: solid 1px #AAA;
+  padding: 20px;
+}
+.texteProtection{
+  display: none;
+  width: 20%;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  border: solid 1px #AAA;
+  padding: 20px;
+}
+.texteLingerie{
+  display: none;
+  width: 20%;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  border: solid 1px #AAA;
+  padding: 20px;
+}
+.texteTicket{
+  display: none;
+  width: 20%;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  border: solid 1px #AAA;
+  padding: 20px;
+}
+/* Fin Oui */
+/* Non */
+.bouteille,
+.bouteilleOmbre{
+  height: 60%;
+  bottom: 10px;
+  left: calc(50% - 10px);
+}
+.aspirineOmbre,
+.aspirine{
+  height: 10%;
+  bottom: 20px;
+  left: calc(50% - 120px);
+}
+.aspirine{
+  background-color: #FFF;
+}
+.aspirineOmbre{
+  background-color: rgb(112,111,111);
+}
+.cernesOmbre,
+.cernes{
+  height: 30%;
+  bottom: 200px;
+  left: calc(50% - 120px);
+}
+.allumettesOmbre,
+.allumettes{
+  height: 10%;
+  bottom: 110px;
+  left: calc(50% - 140px);
+}
+.texteCernes{
+  display: none;
+  width: 20%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  border: solid 1px #AAA;
+  padding: 20px;
+}
+.texteAspirine{
+  display: none;
+  width: 20%;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  border: solid 1px #AAA;
+  padding: 20px;
+}
+.texteBouteille{
+  display: none;
+  width: 20%;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  border: solid 1px #AAA;
+  padding: 20px;
+}
+.texteAllumettes{
+  display: none;
+  width: 20%;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  border: solid 1px #AAA;
+  padding: 20px;
+}
+/* Fin Non */
+/* Bientot */
+/* Agenda */
+.agenda,
+.agendaOmbre{
+  height: 35%;
+  bottom: 15px;
+  left: calc(50% - 35px);
+}
+/* Clef */
+.mouchoirs,
+.mouchoirsOmbre{
+  transform: rotateY(180deg);
+  height: 10%;
+  bottom: 230px;
+  left: calc(50% - 140px);
+}
+/* Monnaie */
+.monnaie,
+.monnaieOmbre{
+  height: 13%;
+  bottom: 20px;
+  left: calc(50% - 180px);
+}
+/* Mouchoirs */
+.clef,
+.clefOmbre{
+  height: 10%;
+  bottom: 120px;
+  left: calc(50% - 140px);
+}
+.texteClef{
+  display: none;
+  width: 20%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  border: solid 1px #AAA;
+  padding: 20px;
+}
+.texteMonnaie{
+  display: none;
+  width: 20%;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  border: solid 1px #AAA;
+  padding: 20px;
+}
+.texteMouchoirs{
+  display: none;
+  width: 20%;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  border: solid 1px #AAA;
+  padding: 20px;
+}
+.texteAgenda{
+  display: none;
+  width: 20%;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  border: solid 1px #AAA;
+  padding: 20px;
+}
+/* Fin Bientot */
